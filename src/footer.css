@@ -9,11 +9,3 @@
   left: 0;
   right: 0;
 }
-
-.avatar {
-  width: 70px;
-  height: 70px;
-  margin-left: 15px;
-  border-radius: 35px;
-  overflow: hidden;
-}
