@@ -1,0 +1,28 @@
+.container-detail {
+  margin: 30px 100px;
+  width: fit-content;
+
+}
+
+.caroussel {
+  width: 500px;
+  height: 400px;
+}
+
+.next {
+  position: relative;
+  left: 450px;
+  
+}
+
+.back {
+  position: relative;
+  left: -80px;
+  transform: scaleX(-1);
+}
+
+.btn {
+  position: relative;
+  bottom: 50%;
+  transition: 0.8;
+}

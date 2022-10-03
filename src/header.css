@@ -1,0 +1,36 @@
+.header-container {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #66CCFF  ;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.nav-item {
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: 0.7s;
+  text-align: center;
+}
+
+.nav-item:hover {
+  background-color: #003399;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  color: #FFF;
+  font-weight: bold;
+}

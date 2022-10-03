@@ -1,0 +1,40 @@
+.product-container {
+  margin: 30px;
+  transition: .4s;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 0.7em;
+  margin-bottom:5px;
+}
+
+.olderPrice {
+  margin-bottom: 5px;
+  font-size: 0.7em;
+  text-decoration:line-through;
+}
+
+.price {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.info-discount, .payment-method {
+  font-size: 0.8em;
+}
+
+.info-discount::after {
+  content: '(10% de desconto)';
+  color: green;
+}
+
+.product-container:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 7px gray;
+}

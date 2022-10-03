@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  height: 100px;
+  background-color: #66CCFF ;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  margin-left: 15px;
+  border-radius: 35px;
+  overflow: hidden;
+}
