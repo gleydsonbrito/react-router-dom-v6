@@ -19,6 +19,7 @@ function Detail() {
     fetch(`https://dummyjson.com/products/${id}`)
     .then(res => res.json())
     .then(res => { 
+      console.log(res)
       setProduct(res)
       SetList(res.images)
       setIsloading(false)
@@ -42,16 +43,27 @@ function Detail() {
   return ( 
     <div>
       <Header />
-        <section className='container-detail'>
-          <div className='caroussel'>
-            {isloading ?
-            loading :
-            <img src={list[index]} alt='caroussel' width={'100%'} height={"100%"}/>
-            }
-            <img onClick={handleBack} className='btn back' src={next} width={70} height={70} alt='caroussel'/>
-            <img onClick={handleNext} className='btn next' src={next} width={70} height={70} alt='caroussel'/>
-          </div>
-        </section>
+      <section className='container'>
+        <article className='container-detail'>
+            <div className='caroussel'>
+              {isloading ?
+              loading :
+              <img src={list[index]} alt='caroussel' width={'100%'} height={"100%"}/>
+              }
+              <img onClick={handleBack} className='btn back' src={next} width={70} height={70} alt='caroussel'/>
+              <img onClick={handleNext} className='btn next' src={next} width={70} height={70} alt='caroussel'/>
+            </div>
+        </article>
+        <article className='container-infos'>
+          <h3 className='older'>R$ {Math.round(product.price*(1 + (product.discountPercentage/100)))}</h3>
+          <h1 className='price'>R$ {product.price}</h1>
+          <p className='desc'>{product.description}</p>
+          <h3 className='discount'>Desconto de {product.discountPercentage}%</h3>
+          <p className='brand'>{product.brand}</p>
+          <p className='category'>Categoria: {product.category}</p>
+          <p className='stock'>{`Ainda temos ${product.stock} produtos em estoque`}</p>
+        </article>
+      </section>
       <Footer />
     </div>
    );

@@ -34,3 +34,36 @@
   justify-content: center;
   align-items: center;
 }
+
+.container-infos {
+  margin: 100px 50px;
+}
+
+.older {
+  color: red;
+  text-decoration: line-through;
+  font-size: medium;
+}
+
+.price {
+  font-size: xx-large;
+  font-weight: bold;
+
+}
+
+.discount {
+  color: red;
+  font-size: medium;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+.category {
+  font-size: small;
+}
+
+.stock {
+  color: green;
+}
